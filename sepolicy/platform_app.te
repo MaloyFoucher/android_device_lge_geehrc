@@ -1,2 +1,1 @@
-# NFC Tile
 allow platform_app nfc_service:service_manager find;

@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo nitrogen_geehrc-userdebug
+add_lunch_combo cm_geehrc-userdebug
+

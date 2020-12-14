@@ -29,3 +29,4 @@ allow conn_init system_file:file execute_no_trans;
 allow conn_init toolbox_exec:file rx_file_perms;
 allow conn_init block_device:dir { search rw_file_perms };
 allow conn_init misc_block_device:blk_file { getattr rw_file_perms };
+

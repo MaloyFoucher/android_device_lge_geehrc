@@ -1,12 +1,13 @@
 # Temperature sensor daemon (root process)
-type thermald, domain;
+type thermald, domain, domain_deprecated;
 type thermald_exec, exec_type, file_type;
 
 # Started by init
 init_daemon_domain(thermald)
 
 # DAC overrides
-allow thermald self:capability { dac_override fsetid };
+#allow thermald self:capability { dac_override fsetid };
+allow thermald self:capability dac_override;
 auditallow thermald self:capability dac_override;
 
 allow thermald self:socket create_socket_perms;
@@ -31,8 +32,7 @@ allow thermald sysfs_devices_system_cpu:file rw_file_perms;
 # For example, the following files pop in and out of existance:
 # /sys/devices/system/cpu/cpu1/cpufreq/cpuinfo_min_freq
 # /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-allow thermald sysfs:file { getattr read open write };
-allow thermald sysfs:dir { read open };
+allow thermald sysfs:file write;
 
 # Connect to mpdecision.
 allow thermald mpdecision_socket:dir r_dir_perms;
