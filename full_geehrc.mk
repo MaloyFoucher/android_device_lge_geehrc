@@ -34,8 +34,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := full_geehrc
 PRODUCT_DEVICE := geehrc
-PRODUCT_BRAND := lge
-PRODUCT_MODEL := Optimus G
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := AOSP on Geehrc
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 

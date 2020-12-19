@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_geehrc-userdebug
+add_lunch_combo aosp_geehrc-userdebug
 
