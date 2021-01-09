@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := gee,geeb,geehrc,e975,geehrc_4g_spr,geespr,ls970,geehrc4g,geehrc4g_spr_us,geebus,e970,e973,e971,geeb_att_us
+TARGET_OTA_ASSERT_DEVICE := gee,geehrc,e975,geehrc_4g_spr,geespr,ls970,geehrc4g,geehrc4g_spr_us
 
 # Get the long list of APNs
 PRODUCT_COPY_FILES := device/lge/geehrc/apns-full-conf.xml:system/etc/apns-conf.xml
